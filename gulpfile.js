@@ -2,7 +2,8 @@
 
 var gulp = require('gulp'),
     gulpless = require('gulp-less'),
-	webpack = require('gulp-webpack');
+	webpack = require('gulp-webpack'),
+    deploypages = require('gulp-gh-pages');
 
 var dest = './dest';
 
@@ -24,6 +25,11 @@ gulp.task("webpack", function() {
 gulp.task('resources', function() {
     return gulp.src(['./src/**', '!./src/js', '!./src/js/**', '!./src/less', '!./src/less/**'])
         .pipe(gulp.dest(dest));
+});
+
+gulp.task('deploy', function() {
+    return gulp.src('./dest/**/*')
+        .pipe(deploypages({branch:'gh-pages'}));
 });
 
 gulp.task('watch', function() {
