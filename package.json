@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-fixedgrid",
+  "version": "0.0.1",
+  "description": "bootstrap-fixedgrid",
+  "scripts": {},
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olegsmetanin/bootstrap-fixedgrid.git"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "gulp": "latest",
+    "gulp-less": "latest",
+    "gulp-webpack": "^1.5.0",
+    "imports-loader": "^0.6.4",
+    "jquery": "^2.1.4",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.11"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "browser": {}
+}
